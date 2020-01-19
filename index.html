@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="title">
+                <p class="title__text">Classic Calculator</p>
+            </div>
+        </header>
+        <div class="frame" id="frame">
+            <div class="output">
+                <p id="output-span1"></p>
+                <p id="output-span"></p>
+            </div>
+            <div class="row">
+                <button class="standard-button" id="back">Back</button>
+                <button class="standard-button" id="ce">CE</button>
+                <button class="standard-button" id="clr">C</button>
+                <button class="standard-button" id="plus-minus">+/-</button>
+                
+            </div>
+            <div class="row">
+                <button class="standard-button number-button" id="input-7">7</button>
+                <button class="standard-button number-button" id="input-8">8</button>
+                <button class="standard-button number-button" id="input-9">9</button>
+                <button class="standard-button" id="addition">+</button>
+            </div>
+            <div class="row">
+                <button class="standard-button number-button" id="input-4">4</button>
+                <button class="standard-button number-button" id="input-5">5</button>
+                <button class="standard-button number-button" id="input-6">6</button>
+                <button class="standard-button" id="subtraction">-</button>
+            </div>
+            <div class="row">
+                <button class="standard-button number-button" id="input-1">1</button>
+                <button class="standard-button number-button" id="input-2">2</button>
+                <button class="standard-button number-button" id="input-3">3</button>
+                <button class="standard-button" id="multiplication">*</button>
+            </div>
+            <div class="row">
+                <button class="standard-button number-button" id="input-0">0</button>
+                <button class="standard-button" id="decimal">.</button>
+                <button class="standard-button" id="equals">=</button>
+                <button class="standard-button" id="division">/</button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__left"><a href="#help" class="text-button text-button__footer">Need help?</a></div>
+                <div class="footer__right"><p class="footer__text">&copy; 2020 Kevin Smith</p></div>
+            </div>
+        </footer>
+        <div class="help" id="help">
+            <div class="help__content">
+                <table class="table">
+                    <tr>
+                        <th>Key</th>
+                        <th>Command</th>
+                    </tr>
+                    <tr>
+                        <td>Backspace</td>
+                        <td>Back</td>
+                    </tr>
+                    <tr>
+                        <td>Delete</td>
+                        <td>CE (Clear Entry)</td>
+                    </tr>
+                    <tr>
+                        <td>Escape</td>
+                        <td>C (Clear all)</td>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>+/-</td>
+                    </tr>
+                    <tr>
+                        <td>Enter</td>
+                        <td>=</td>
+                    </tr>
+                </table>
+                <a href="#frame" class="help__close text-button">Close</div>
+            </div>
+        </div>
+        <script src="scripts/calc-functions.js"></script>
+        <script src="scripts/calc.js"></script>
+    </body>
+</html>
